@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>the Product.&trade;</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -33,10 +33,10 @@
          padding: 2.5% 10%;
        }
        .linediv-l {
-         border-bottom: 1px white solid;
+         border-bottom: 1px #343434 solid;
        }
        .linediv-r {
-         border-top: 1px white solid;
+         border-top: 1px #343434 solid;
        }
       }
 
@@ -68,14 +68,17 @@
         padding: 2% 0%;
       }
       .actions {
-        background-color: #343434;
+        /* background-color: #343434; */
+		background-color: #fff;
+		border: 0px dashed #000;
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
       .statistics h3, .statistics p {
-        color: white;
+        /*color: white;*/
+		color: #343434;
       }
 
       /* Marketing Copy and Footer */
@@ -97,6 +100,83 @@
       .footer a {
         color: #ccccff;
       }
+	  
+	/* overrides */
+	.btn-success {
+		background-color: #faa732;
+		background-image: linear-gradient(to bottom, #fbb450, #fb9406);
+		color: #fff;
+	}
+	
+	.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+		background-image: linear-gradient(to bottom, #343434, #343434);
+		background-color: #343434;
+		color: #fff;
+	}
+	
+	.progress-success .bar, .progress .bar-success {
+		background-color: #343434;
+		background-image: linear-gradient(to bottom, #343434, #232323);
+	}
+	
+	li {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	
+	.sh {
+		font-style: italic;
+		font-weight: bold;
+	}
+	
+	.linediv-l {
+		border-right: 1px solid #343434;
+	}
+	.linediv-r {
+		border-left: 1px solid #343434;
+	}
+	.section1 {
+		background-color: #343434;
+		color: #fff;
+	}
+	.accordion-heading a{
+		color: #343434;
+		font-weight: bolder;
+	}
+	.ahc {
+		background-color: #faa732;
+		color: #fff;
+	}
+	.ahc a{
+		color: #fff;
+		font-weight: bolder;
+	}
+	.ff{
+		width: 100%;
+	}
+	.icon-twitter, .icon-facebook{
+		font-size: 44px;
+	}
+	.icon-twitter:hover,.icon-twitter:focus,.icon-twitter:active {
+		color: #00BEF6;
+		cursor: pointer;
+	}
+	
+	.icon-facebook:hover,.icon-facebook:focus,.icon-facebook:active {
+		color: #3B5998;
+		cursor: pointer;
+	}
+	
+	.btn-primary {
+		background-color: #faa732;
+		background-image: linear-gradient(to bottom, #fbb450, #fb9406);
+		color: #fff;
+	}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+		background-image: linear-gradient(to bottom, #343434, #343434);
+		background-color: #343434;
+		color: #fff;
+	}
     </style>
   </head>
   <body>
@@ -112,11 +192,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">the Product.</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+			  <li><a href="#about-u">About Us</a></li>
+			  <li><a href="#faqq">FAQ</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -133,14 +214,14 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1><em>the Product.</em></h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Go for no less. Go for the Product.&trade;</p>
         </div>
       </div>
       <div class="row-fluid pitch">
@@ -157,12 +238,12 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <h3>9000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$90000</h3> <p>of $100,000</p>
                 </div>
               </div>
               <div class="span4">
@@ -176,24 +257,27 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 90%;"></div>
+              <div class="bar bar-warning" style="width: 10%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
+            <button class="btn btn-success btn-large">Preorder <em>the Product.</em></button>
           </div>
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+            <i class="icon-twitter"></i>
+            <i class="icon-facebook"></i>
           </div>
         </div>
       </div>
-
+	</div>	
+		
+		
+	<div class="container ff">
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
@@ -204,17 +288,8 @@
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+			<span class="sh">What is the Product.?</span>
+			blah blah
           </p>
         </div>
       </div>
@@ -222,17 +297,8 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+			<span class="sh">Market Analysis > </span>
+			blah blah
           </p>
         </div>
         <div class="span5 asset">
@@ -240,23 +306,60 @@
         </div>
       </div>
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+          <p>
+			<span class="sh">Mathematical Ingenuity > </span>
+			blah blah
+          </p>
+        </div>
+      </div>
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+		    <span class="sh">Technological Supremacy ></span>
+			blah blah 
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+      </div>
+
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+          <p>
+			<span class="sh">the Product and You ></span>
+			blah blah
+          </p>
+        </div>
+      </div>
+	</div>  
+      <div class="container">
+	  <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
+      <div id="faqq" class="row-fluid faq">
           <div class="span10 offset1">
-            <h3>FAQ</h3>
+            <legend>Frequently Asked</legend>
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    Question #1
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
+                    Answer #1
                   </div>
                 </div>
               </div>
@@ -264,31 +367,117 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    Question #2
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    Answer #2
                   </div>
                 </div>
               </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseThree">
+                    Question #3
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Answer #3
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFour">
+                    Question #4
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Answer #4
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFive">
+                    Question #5
+                  </a>
+                </div>
+                <div id="collapseFive" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Answer #5
+                  </div>
+                </div>
+              </div>			  
             </div>
           </div>
+</div>
+</div>
+<div class="container">
+<div id="contact">	  
+<form class="form-horizontal">
+<fieldset>
 
-      </div>
+<!-- Form Name -->
+<legend>Communicate</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="fname">Full Name</label>
+  <div class="controls">
+    <input id="fname" name="fname" placeholder="Please enter your full name" class="input-xlarge" required="" type="text">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="email">email</label>
+  <div class="controls">
+    <input id="email" name="email" placeholder="Please enter a valid email address" class="input-xlarge" required="" type="text">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="fsend"></label>
+  <div class="controls">
+    <button id="fsend" name="fsend" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+</div>
+		
+</div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+			<p>Site designed by <em>the Company</em>. Based on Twitter Bootstrap Framework. <em>the Company&trade;</em> & <em>the Product.&trade;</em> are registered trademarks. &bull; &copy;2013</p>
         </div>
       </div>
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+          <p class="lead">What have you done for yourself today?</p>
+        </div>
+      </div>
+	  <div class="row-fluid heading">
+        <div class="span12">
+          <h1><em>the Product.</em></h1>
+        </div>
+      </div> 
     </div>
   </body>
 </html>
